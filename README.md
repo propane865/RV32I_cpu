@@ -1,1 +1,2 @@
 # RV32I_cpu
+This is a simple, non-pipelined RISC-V core, utilizing the unprivileged RV32I instruction set. Timing reports and the GDS file for this design may be found in `output/`, and verification files may be found in `verification/`. The design was synthesized via Yosys, and the RTL-to-GDS flow was performed by OpenROAD and Magic VLSI, using the SKY130 PDK. 
