@@ -30,7 +30,7 @@ module alu(input [31:0] a, b, input cin, input pass, input invert, input sgn, in
     assign a_cmp = invert ? ~a : a;
     assign b_cmp = invert ? ~b : b;
 
-    // Instantiate shifter, RCA, and comparator
+    // Instantiate shifter, CLA, and comparator
     shifter sh(a, b[4:0], op[0], invert, a_shift);
     cla32 add(a, b_cmp, cin, a_b_add, cout);
     comp32 comp(a, b, ~sgn, gr, le, eq);
