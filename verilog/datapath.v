@@ -13,9 +13,9 @@ Memory Write Data:      | dmem_wdata
 --------------------------------------
 Memory Read Data:       | dmem_rdata
 --------------------------------------
-Memory Write Enable:    | dmem_w_ena
+Memory Data Width:      | dmem_width
 --------------------------------------
-Memory Data Width:      | width
+Memory Write Enable:    | dmem_w_ena
 */
 
 module datapath(input clk, rst, output [31:0] pc_out, dmem_addr, dmem_wdata, dmem_rdata, output [1:0] dmem_width, output dmem_w_ena);

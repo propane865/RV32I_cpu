@@ -28,6 +28,12 @@ Enable Branching:               | branch
 Program Counter JAL:            | jump
 -----------------------------------------------
 Program Counter JALR:           | jalr
+-----------------------------------------------
+ALU Source Select A:            | alu_src_a
+-----------------------------------------------
+Writeback Selection:            | wb_sel
+-----------------------------------------------
+Memory R/W Width:               | mem_width
 */
 
 module control(input [6:0] opcode, funct7, input [2:0] funct3, output reg alu_src, reg_w_ena, mem_w_ena, mem_signed, alu_cin, alu_invert, alu_sgn, alu_pass, branch, jump, jalr, output reg [1:0] alu_src_a, wb_sel, mem_width, output reg [2:0] alu_op, imm_sel, branch_cond);
